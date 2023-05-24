@@ -16,11 +16,69 @@
 /*   font-family: 'DM Sans', sans-serif;   */
 /*   font-family: 'Inter', sans-serif;     */
 
-
 /*-------------  HEADER  ------------ */
 
 /*--------------  HOME  -------------*/
 
 /*--------------  WORK  -------------*/
+#work{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
+
+.container_work{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.imagens_work img{
+    display: flex;
+    width: 500px;
+}
+
+.textos_work{
+    margin-left: 100px;
+}
+
+.textos_work h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.underline{
+    position: absolute;
+}
+
+.textos_work p{
+    margin-top: 24px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.botao-t {
+    margin-top: 60px;
+    background-color: #4F9CF9;
+    width: 186px;
+    height: 63px;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.textos_work span{
+    background-image: url(./SVG/Work/underline\ together.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
 
 /*-------------  FOOTER  ------------*/
