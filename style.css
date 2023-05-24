@@ -1,5 +1,3 @@
-
-
 * {
     padding: 0;
     margin: 0;
@@ -21,9 +19,16 @@
 
 /*-------------  HEADER  ------------ */
 
-body{
+header{
+    display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+padding: 16px 220px;
+
+
     height: 100vh;
-    background: #043873;
+    background: var(--cor-background);
     background-size: cover;
     background-position: center;
 }
@@ -57,7 +62,9 @@ head{
     align-items: center;
     justify-content: space-between;
 }
-
+.navbar .logo{
+    
+}
 .navbar .logo a{
     font-size: 1.5rem;
     font-weight: bold;
@@ -80,7 +87,7 @@ head{
 }
 
 .action_btn{
-    background-color: #FFE492;
+    background-color: var(--cor-login);
     color:#043873;
     padding: 1rem 2.5rem;
     border: none;
@@ -92,7 +99,7 @@ head{
     transition: scale 0.2 ease;
 }
 .action_btnn{
-    background-color:#4F9CF9;
+    background-color:var(--cor-botao);
     color:white;
     padding: 1rem 2.5rem;
     border: none;
