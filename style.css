@@ -20,7 +20,58 @@
 /*-------------  HEADER  ------------ */
 
 /*--------------  HOME  -------------*/
+#home{
+    display: flex;
+    background-color: var(--cor-background);
+    height: 100vh;
+    background-image:url(./SVG/Home/Desktop/Element.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
 
+#home-container{
+    margin-top: 5.7rem;
+    width: 75.5vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home-container h1{
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+.home-subtitle{
+    padding-top: 24px;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+.home-botao{
+    margin-top: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-botao);
+    color: #fff;
+    height: 60px;
+    width: 220px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+
+.home-botao img{
+    color: black;
+}
 /*--------------  WORK  -------------*/
 
 /*-------------  FOOTER  ------------*/
