@@ -72,6 +72,58 @@
 .home-botao img{
     color: black;
 }
+
+/* Para Tablets */
+
+@media screen and (max-width: 768px){
+    
+#home{
+    background-image: url(./SVG/Home/Tablet/Element.svg);
+}
+#home-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home-botao{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+}
+
+/* Para Mobile */
+
+@media screen and (max-width: 320px){
+    
+    #home{
+        background-image: url(./SVG/Home/Mobile/Element.svg);
+        background-position-y: -10px;
+    }
+    #home-container{
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 90vw;
+    }
+    #home-container h1{
+        font-size: 36px;
+    }
+
+    .home-subtitle {
+        font-size: 18px;
+    }
+    
+    .home-botao{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    }
 /*--------------  WORK  -------------*/
 
 /*-------------  FOOTER  ------------*/
