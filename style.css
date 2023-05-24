@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --cor-background:#043873;
+    --cor-login: #ffe492;
+    --cor-botao: #4f9cf9;
+}
