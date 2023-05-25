@@ -6,8 +6,8 @@
     text-decoration: none;
 }
 
-:root{
-    --cor-background:#043873;
+:root {
+    --cor-background: #043873;
     --cor-login: #ffe492;
     --cor-botao: #4f9cf9;
 }
@@ -19,76 +19,105 @@
 
 /*-------------  HEADER  ------------ */
 
-header{
+header {
     display: flex;
-flex-direction: row;
-justify-content: space-between;
-
-padding: 16px 220px;
-
-
-    height: 100vh;
+    height: 7.8vh;
     background: var(--cor-background);
     background-size: cover;
     background-position: center;
+    align-items: center;
+
 }
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
     font-size: 1rem;
 }
 
-a:hover{
-    color:orange;
+a:hover {
+    color: orange;
 }
 
 
-head{
+head {
     position: relative;
     padding: 0 2rem;
 }
 
-.navbar{
+
+.navbar {
     width: 100%;
     height: 60px;
-    max-width: 1200px;
-    margin: 0 auto;
+
+
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-.navbar .logo{
-    
-}
-.navbar .logo a{
+
+
+
+.navbar .logoheader a {
     font-size: 1.5rem;
     font-weight: bold;
 
 }
 
-.navbar .links {
+.navbar .linksheader {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
     display: flex;
-    gap: 2rem;
-  
+    justify-content: center;
+    align-items: center;
+
 
 }
 
 
-.navbar .toggle_btn{
-    color:white;
+.navbar .toggle_btn {
+    color: white;
     font-size: 1.5rem;
-    cursor:pointer;
+    cursor: pointer;
     display: none;
 }
 
-.action_btn{
+.containerdiv {
+    display: flex;
+
+
+}
+
+.linksdiv {
+    display: flex;
+    padding-right: 65px;
+    align-items: center;
+
+
+}
+
+.linksheader img {
+    margin-right: 40px;
+}
+
+.actiondiv {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+
+
+
+
+}
+
+.action_btn {
     background-color: var(--cor-login);
-    color:#043873;
+    color: var(--cor-background);
+
     padding: 1rem 2.5rem;
     border: none;
     outline: none;
@@ -98,9 +127,11 @@ head{
     cursor: pointer;
     transition: scale 0.2 ease;
 }
-.action_btnn{
-    background-color:var(--cor-botao);
-    color:white;
+
+.action_btnn {
+    background-color: var(--cor-botao);
+    color: white;
+    margin-left: 24px;
     padding: 1rem 2.5rem;
     border: none;
     outline: none;
@@ -111,33 +142,35 @@ head{
     transition: scale 0.2 ease;
 
 }
-.action_btnn:hover{
+
+.action_btnn:hover {
     scale: 1.05;
     color: white;
 }
-.action_btn:active{
+
+.action_btn:active {
     scale: 0.95;
 }
 
 
-.action_btn:hover{
+.action_btn:hover {
     scale: 1.05;
     color: white;
 }
 
-.action_btn:active{
+.action_btn:active {
     scale: 0.95;
 }
 
 /*dropdown menu*/
-.dropdown_menu{
+.dropdown_menu {
     display: none;
     position: absolute;
     right: 2rem;
-    top:60px;
-    height: 0 ;
+    top: 60px;
+    height: 0;
     width: 300px;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--cor-background);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
@@ -145,68 +178,76 @@ head{
 
 }
 
-.dropdown_menu.open{
+.dropdown_menu.open {
     height: 240px;
 }
 
-.dropdown_menu li{
+.dropdown_menu li {
     padding: 0.7rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.dropdown_menu .action_btn{
+
+.dropdown_menu .action_btn {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.dropdown_menu .action_btnn{
+
+.dropdown_menu .action_btnn {
     width: 100%;
     display: flex;
     justify-content: center;
 }
+
 
 
 /*hero*/
-section#hero{
+section#hero {
     height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color:white;
+    color: white;
 }
 
-#hero h1{
+#hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
 /*responsive header*/
 
-@media(max-width: 768px){
-    .navbar .links,
+@media(max-width: 768px) {
+
+    .navbar .linksheader,
     .navbar .action_btn {
         display: none;
     }
-    .navbar .action_btnn{
+
+    .navbar .action_btnn {
         display: none;
     }
-    .navbar .toggle_btn{
+
+    .navbar .toggle_btn {
         display: block;
     }
-    .dropdown_menu{
+
+    .dropdown_menu {
         display: block;
     }
 }
 
-@media(max-width: 768px){
-    .dropdown_menu{
+@media(max-width: 768px) {
+    .dropdown_menu {
         left: 2rem;
         width: unset;
     }
 }
+
 /*--------------  HOME  -------------*/
 
 /*--------------  WORK  -------------*/
