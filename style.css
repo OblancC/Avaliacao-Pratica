@@ -16,7 +16,6 @@
 /*   font-family: 'DM Sans', sans-serif;   */
 /*   font-family: 'Inter', sans-serif;     */
 
-
 /*-------------  HEADER  ------------ */
 
 header {
@@ -354,5 +353,223 @@ section#hero {
     
     }
 /*--------------  WORK  -------------*/
+#work{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
 
+.container_work{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.imagens_work img{
+    display: flex;
+    width: 500px;
+    margin-left: 219px;
+}
+
+.textos_work{
+    margin-left: 100px;
+    margin-right: 330px;
+}
+
+.textos_work h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.underline{
+    position: absolute;
+}
+
+.textos_work p{
+    margin-top: 24px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    margin-right: 100px;
+}
+
+.botao-t {
+    margin-top: 60px;
+    background-color: #4F9CF9;
+    width: 186px;
+    height: 63px;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.textos_work span{
+    background-image: url(./SVG/Work/underline\ together.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+@media (max-width: 768px){
+    #work{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 100vh;
+    }
+    
+    .container_work{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    
+    .imagens_work img{
+        display: flex;
+        width: 300px;
+        margin-top: 100px;
+        margin-left: 0px;
+    }
+    
+    .textos_work{
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .textos_work h1{
+        font-family: 'Inter', sans-serif;
+        font-size: 54px;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .underline{
+        position: absolute;
+    }
+    
+    .textos_work p{
+        margin-top: 24px;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        margin-right: 70px;
+        margin-left: 70px;
+        text-align: center;
+    }
+    
+    .botao_work{
+        display: flex;
+        justify-content: center;
+    }
+
+    .botao-t {
+        margin-top: 60px;
+        background-color: #4F9CF9;
+        width: 186px;
+        height: 63px;
+        box-sizing: border-box;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    
+    .textos_work span{
+        background-image: url(./SVG/Work/underline\ together.svg);
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+    }
+}
+
+@media (max-width: 320px){
+    #work{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 100vh;
+    }
+    
+    .container_work{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    
+    .imagens_work img{
+        display: flex;
+        width: 250px;
+        margin-top: 100px;
+        margin-left: 0px;
+    }
+    
+    .textos_work{
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .textos_work h1{
+        font-family: 'Inter', sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .underline{
+        position: absolute;
+    }
+    
+    .textos_work p{
+        margin-top: 24px;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        margin-right: 40px;
+        margin-left: 40px;
+        text-align: center;
+    }
+    
+    .botao_work{
+        display: flex;
+        justify-content: center;
+    }
+
+    .botao-t {
+        margin-top: 60px;
+        background-color: #4F9CF9;
+        width: 186px;
+        height: 63px;
+        box-sizing: border-box;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    
+    .textos_work span{
+        background-image: url(./SVG/Work/underline\ together.svg);
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+    }
+}
 /*-------------  FOOTER  ------------*/
